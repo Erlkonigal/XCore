@@ -1,8 +1,8 @@
-package main.scala.xcore.backend
+package xcore.backend
 
-import main.scala.xcore.backend.decode.DecodeParams
+import xcore.backend.decode.DecodeParams
 
 case class BackendParams(
-    val numArchRegs: Int = 32,
+    val numArchRegs:  Int = 32,
     val decodeParams: DecodeParams = DecodeParams()
 )

@@ -1,4 +1,4 @@
-package main.scala.xcore.backend.decode
+package xcore.backend.decode
 
 case class InstrSetParams(
     val extensions: List[String] = List("I")

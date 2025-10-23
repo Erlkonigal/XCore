@@ -1,2 +1,1 @@
-package main.scala.xcore.backend
-
+package xcore.backend

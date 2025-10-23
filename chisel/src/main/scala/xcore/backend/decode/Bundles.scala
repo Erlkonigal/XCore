@@ -1,12 +1,10 @@
-package main.scala.xcore.backend.decode
+package xcore.backend.decode
 
-import main.scala.xcore.XCoreParams
-import main.scala.xcore.XCoreBundle
+import xcore._
 
-trait HasDecodeParams {
-    implicit val p: XCoreParams
-    def instrWidth: Int = p.instrWidth
+trait HasDecodeParams extends HasXCoreParams {
+  def instrWidth: Int = p.instrWidth
 }
 
-abstract class DecodeBundle(implicit p: XCoreParams) 
+abstract class DecodeBundle(implicit p: XCoreParams)
     extends XCoreBundle with HasDecodeParams {}

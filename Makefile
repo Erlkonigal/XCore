@@ -13,8 +13,12 @@ emu-rtl: $(MILL)
 	@mkdir -p $(EMU_RTL_DIR)
 	$(MILL) -i $(MILL_PROJECT).runMain xcore.XCoreSimTop --target-dir $(EMU_RTL_DIR)
 
-emu: emu-rtl $(EMU_CPP_SRCS)
-	
+check-format:
+	$(MILL) $(MILL_PROJECT).checkFormat
+
+reformat:
+	$(MILL) $(MILL_PROJECT).reformat
+
 clean:
 	rm -rf $(BUILD_DIR)
 

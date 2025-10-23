@@ -1,2 +1,1 @@
-package main.scala.xcore
-
+package xcore
