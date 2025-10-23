@@ -1,0 +1,6 @@
+.bloop
+.vscode
+.metals
+.idea
+out
+build
